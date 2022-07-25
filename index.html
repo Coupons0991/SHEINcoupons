@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupons2day</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Coupons2day</p>
+        </div>
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instgram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+        </ul>
+       
+    </header>
+ <section>
+    <div class="slider">
+        <div class="container">
+            <h2>Our Parteners</h2>
+            <div class="container">
+                <section class="customer-logos slider">
+                    <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Resala.png"></div>
+                    <div class="slide"><img src="https://www.dar-alorman.com/imgs/ormanb-logo.png"></div>
+                    <div class="slide"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAACzCAMAAACKPpgZAAAA4VBMVEX///8DYihxv0VrvTn//v9uvkFuvj////0AUgBovDb8/vtsvTwAVABpuzas2ZcAWhSo2JLH5Lrn9OGe04Te79WPzHB5wlHT6sbZ7cy13aUAWxgAXR6Uz3YAWA6Zz33v9fKFqI2bt6O2ybwYbThZjGhChVmjvay53qfR3NPA4rKAxVr3+/NQhl9iuSg5d0rl897J180ASgBzmn6OsJiIyWfi7OXn7+p4o4dqlXRfuiGq1pHw+Oq33p58w1Utc0Oow7ANaTKYuqEAQgC91cXD0shvnn0YcjyyxrkAZB9il3MbZjH/6AjGAAATBUlEQVR4nO2cC1fiuhbHQ0tb+sAKAkJrLSjIo7yUlyMKeHSuM37/D3T3Tpq2IDhHYZZ3XfO/dx1LaEP6687Ozk46hAgJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkdRnlN++om/E8qOOkIMlsUNJVsUYBZF/I47WQlRZB5o8GZrkiCzBsFx7IqSYLMG+UkU5K+ORktTd7e+xF2JEHmbVlTlyRBhpSPjDWrSZO8LMVkxt+XTOGHlFu/+6MEGfXki5r1P6CCLunjAontJugoMZls+yvb9rUCMpKiH8+jgnnCZCRz/s6l/+cqUHdrShUjtJt57H8l/eirm/eFKoQg9IdTQsepfEzGHAdf3bwvFCcjKdkTDSfWMRn9W4OJyYC7PScJMqbeNL66cV+qQtKt5Agno/TO0flq5PvmZwYJMpIS2oyid9hAPjj5tmDIPAFG0suUjFzK0e+Cu943joHJmZkIX2CUzvekCvW8Rlsyv/O8iZQ3JgP5szntSKedrPKtZ5SEnMRGo56T0OXmz3RMXX1rMmmjqCfJoIIjltL73mRgYD7qKWtkCiXew741GWSTLzI2jExeiWbb35nMfM6WUEo6J2OM1TjAGW/J+X0TlX9U2CSgqciMTC4R+6lnW9LE30QFPVs6pcP0/EQ2cWwqxiYjyd84DQHzJkUvDujxYHwG41IipSfphS9u3heKzihV/Y4l7wbrmSv1O08Owrm2KbGcg4azg8j/yt/YZOIsRBan10gmthk999Wt+0rF+RlVLmNBREaWyof8oR39cpBr58oB0TANbSROY3+N9B+7M01EJpY+QDzjlk7+0RIl/0qJzJWiorMJySj6/UFznYGelWMpYd1NSddNU9ZpmowUfsiyztdxTnuy3CuQY51fUrrLQ3Gul6hG1k2DtHtwPf+ZeVbXe9GAOsA6ylF98MUH/GYyp4eDNiOj6GcHXk8xkos1ikTJBB36W/jLYK8andwqJQbNgHL5jpDjeL5r9trr0RbKwJJ4wbANP6OUuNGgz1Q6jMapjkmWDxhNPhG9SL05I0NTeocVJWOGklW8/aAEd22qJUlWJMUshCchDtB9lkFCMipeg+3Uy2Az+AFpYqlsUjJKRIYuI8qn/OYQY2iFjMxHWpxcksRK8j2z9Bc8LyVzV7kPhYvpRXy+94NgflpSJbWDDxotwsTgCmOHLDYDyKhncNnRuUqjiMJR5b5S6WAuqYJH62QGJtqgyT8yz5Cl5v9hMqSymbnqHf2NxRQko65VXO6BZ2NPd16Cp0Ij8THcF4SbBDiwYArIyOyhl+E25Ty79kyh51MlyRxBd4QqpNAVMDJsnvxxMkEpNhqoQwsKO8eRfYRklDUyCIE3tf1D7x3jz6Lbgz6Df2j/SpDBC3hMvoNM8ABu5VSOwg3mM2l6+xNkSEFWEmS2yp+0hkP/Y9VuCMmYSTIBrlGEJgCPo1BgM5Q7fOqkaErmMf0ckdHImcrukewgkyanWclsQsVqmDwBMsr5g6KUyGfIaKSsyO+RmV51Lx3PsqYfqnZTtDc1c0ztgE3YOm+NM8Bn3MZnxTDGNqOBD5EZvu1kNOyDvTw1RoYcydzBcCU3P2UzuCG6p+4io41SnptKpezRR2tdFxubWBRiQvOxpeoZ/WpQYGJRXRtsSaX7U+hHJNMM5vN5Af3HQzgeb+9Nc4maR1OWzAotyNMBHdwFRGqfIoOzbLo17y0Zo+GlmPbrTIyMwiTpeXpDIRmI9lByQFFoNHGmdMLrcNQ26ffQQL0Zlm4nA1DROnBcoyMdJXOOrht+qfw5MridU99Gpm4zLnbtM5UmRMl0QpVCmylSuyipLL1Ku08a/J6USH/QSA/iHfi/qh/z2rb3piKU4qgEnYpdz8jgkppeLnySjEa0CkRTm2QuuMVc7mkyb8emss4NozgejymZMEA9UTEaD10QkGGGpkrj0yiE3UoGR6IH7JYwdqu8BG8JjEgZF7KftBmCST39bL3EX7gMjLevyWzGMxodm6RoCoKJRE7myKSdggnImJX8YDDIJ7FuJXOPYR72O/xLn0JIhjSzknqsfJoMRhPH60Wj0GTcxb4mw8iszcUgjpUr4XGg4FxqBxn57WbBbWSCB+xxVEq8r4MtLj7Q7vppm0FbXdsfPAm7UspbfrbKSG9jYDo3ZDkhOpXclwzGyKVzKrBApUhimyGF3n5kCEmGvxr56XCT2X+PEfXAR81QdE9BB9ovteeakT+Rpf3JgHviZ86VaHYcuk66RL0fmYSG3P16L/tXloxnZPkHzQTRObb0UFJN+p7DfmQCDAR5d4VwGauIycyxh+1FJrHFSuu73GT2qJBrLT9DHyjYuMlf/NDbEMV8ngyORDQ+0uIyRaL5GT7cYgD5BzKT4cXFy8vLVaga0+OIqpo4cRmZzMVnUGwogDEjC8L/6HKPRe/BMUZ4OqaDznqRF7rr6T3umgmc0Wtu1JUmRT3b42TaPR1zeh0oirIngarrPwpkAF+Fw60xhu+35vTS8ED8i9l/PM+z4f+bcqisenyp/yt1QJPZNX8Pyrl2bsAStFu3BO6e9vPT2V/t7dlGcjRh32xN6RkX3YznpN5VZhKfz91vynr+v17B1ZYry30fC3SbanQ6GWa4yfT/VpP+Ur0fU6tv/QkLzI3q8QX+inO0hl/X7A/ok5yv7D/aS8q1bhJRS5f3Jbd7mJYHhVjsd+a5u5Pj5iBxzjx3fHISlczZyXRaEN13WAilicYWyoUyP2PAU2Akz47wCsK28MJRfh1h1dsBI5ZjLaKgBa79afNzrNZhyJR/ZEPpdJIQ3ClZU4UA55zHIMGdpENkL/MFnfsePVuXpfMY312P1aGbD9GIFZT07A8+N8eUBjv9vNcbw59KL/uD3lRbh8vyCTDpaPazaSOLLle9Xn1KPAP/dwTGTfSw/cjoUjRphjufd2RFMXUdptVSnjY8GEPgJ+tZFYK/AT6dCk4MMUGhmHI0HB+ZbG0Gwme9Eg41pxiq8Bw5pqmK9OjEpAcVWdLxY06G35+vdbuXrWDs7sTAvfO4+LnRR58W8RB2KJOhSYcxU3EO0YUsmQ/t01wRihV4KGkNU7+lsISmanBRA87u9GBOFaVrkAyuq5zhyhQNgGiOE9CET7YkhcsxMFtIkinDkwBjXZsWbnUxO92Hv2wknJJze6ghBMjo8VQbIlKTBaf3Mtu+BFGryYKyis5KkAzeLoSDktIxIjIKryHEhZOkEtKgLcWVEFzC09bJFLJgrfmkxaRJfSsZZ7S82lRtNKuvrDVnbScCnP3J5KNPHbD5sJFj6EP4R+U5cczV9DRGJsqS80UDJEMhzbNSj/mTpqycVVR1zE6ga0TyMdx4kswA5/L59UCvtWO4dt6EwRgIb1D09kyL7yIzV3kOWyOnspQt4zuK5n34LfgNBBGTmZvRlCeymaauPFC2xliR2wWYNOVDMuqxKqETjsmYARhMaUDWN1bc/nm83im3f7g3nDBBXWlTGfS1Vr4FJQ/T4hwtiVajFclsJ8nAzfOJIZK5AxVl5SHcQke7KbjpSkhGzt2ZuOAUk5HAIGHSuT41mPyLCG83mUO5X0ZGwkFa1sFxolVEYYsEz3ytJChJZjNJhpypyjgiAwOYnDVhEs326x5RDEdmuHiF1wbgsnNJMlJyG0Co2z/MlN7T/snfDTJyuHpCOfCuBQ6UkelFrEo0CxGRSZMzJRyJKZlicVyEQV+lw73BXp3Oc4dcQuPBlINxnCCDY39pLdc63cNk7IONSyEZs3kKyuWCsDex2gfylt6EWdxEb+oofIcM88CaZgxKbHTDxZnTwSAvhcu90JsquNlbrxxF8QxUzQbDxP3MPm8yTvegr1EmRu002km82A+DdIEE4Al4SS5Ln39MBg2imSQTHuGYRjePmDKmwOieJEoGBmlJSYxNp0TD7QKJDJi/Y1rwb8Ac0PtyMvGoXVR4aKbhAE4wS6eEy1F4E2pi1NYwicu7Wkzm3pSyBl2bkekWozDAY2TIMUS8UjLSw7ciEw2oftpkrANNJHeQwUXmMb3DExntAQZvXVHZW9AnWWYhyUhPLcaZUDZqz3GhhO0+a+ba7VyuxBaDQzIBXaZPzg6aUAtfEib+Z0ds1xp9aBvkh8mQc2infNy+L8m8vSe4mZ2XGCEZnDTpAMPk3hk9MF03gUmWDgHQgxIujtO4ZR6RwS65TkYbg5HxkGlk/xnCFjkwpzosljdkNKOoQ4eSYWJoPoRuFv9hLRW34MkPdDymZBQKR+LumpJRTZiSw1gPRjfoJXcRoamFZDSMpDmZHj1hAFWHndJffdxYXMdb3Q4/tnH235HpKUmbgRaXshDc6NJdtDzXhBLT1KVjVlLRw/XGzl083h6FhVDaDOjHaAV4bMpgayVTZyHfQFZNJHOvqz3CK5SZT69lvDVZTN5bscnBr9Rlvz562nuhdquCfD6ZbMK0Q6FdaZeTQUZQaFaap7xknmeaJy/jhWEpHmiJrwz8bzgFx+/CHw63XeN19Mvh8/Pz0/OQq/UnTSY+/bnv+7KXkJCQkJCQkJCQkND/krZnWNM7piwfysfGdeyTxj307panWZVq9l6Cw5hVdy1XGHBt/E7tC6ustuPs1my2OS/2q9XH8PpRFbfXPY/eNKVWrdLLRrPH9xt50I0zNcuxcVp//d5KjXGd2bUn8NlyrPi7quV6luXZmerW+e/yn+vNd478lRemKf3L6xuaiLje/K2ul6GrApde451GateZq3e+/rBqdqrRbYDetZnMzt2Sv93kvoyq485Go1s3ZW9962pydfXGZi75Ur7xcgXP/JfbHW5eW3dT3hP8XbjvksnYBybjRdaiDZfLEND06YomhNLEX15Ngp1kpin3MuVGVKuOg8cjx8FKJ8tHrE8jAVSMBf5kgj1n+rJ85oRiMmQ68f2J61Snhkb8i1q8PwbI0PcIGBmtha3UoiP8Af/iqkX+HplWPwOqY5sfHTiyce/+U8rKXFedXWSuPGtoxa8ShWTAdHxi3FrXUMtvjbRWmcx1pj8hy2vsTSMLildPm2SgN1Vf/kmlvH9aZOnCKZe8YXX3dYVL+ZSMX8dW3kLxtItHMzgarqCRM/fQZNzq8rEGPtNP2YvaKGVDQ5eWe7usO9YT2sTiceTs3HvcsBtk4USbKQHJ7WwGvQlOH2Wc5WRkW8+ka3dbw0WmSy48zyePGefnVdf2Jptk+k518ui69Uf/wnJmy669Cg2r7nQfPbBCJGN0LWylVcWX3/q1ES4a+Cvn8nH0K3VoMilMt15fkZqXgsYubaulXTr4TBpwx48edhW4o+1kWg4Y1pXt8KdbdVJoEG4KrKg2W+JirHdhXDr1KfiYJSWjpRxwtNNF6nELGUIcfP2xTzd7rPgydd3pGwunS8k8ZVJT3C3uAj4kd2WnjCViI0/ewW2mfnNzc/tMbtFaiO96V75FQSztlH9jY9c2rB1ksPf4E8+ZRZ/dl1Zr+NvNABV/WPu5cO0L8jNjp/qzISXst2zvGfyX7xvaLjJT2+3W67cANCJDnmzrog9kqvZrvV7vut6w6lzSI7s1s+nypPW3/EyX7a5N2bVJxsPI4MVzp7esMCKTZv9CSDgk+4tU6hX+l+LvWVUdtufJg9u9cDNWf0Y91EvdyXjWT0pmaEPl9HpOpr5JZuKlVqD/rBJkyI1zeUnJ0O8uV8MbNzyrdWPTFW3b+0tkbmx0FxPXe/E96nxHdgoacgk/OuVjUxRnsoNnz8XOY7FBlUQeGMg0jEv71iB0VJtAWavuOhMkM7GhRNNmXfZu1jYy0/DFLcNIkAGPlwIyNY8+hcAgVY9aihFAI7Ff+X9tbHqiNd84lg9NWUyAkfMbC0e4p4XbzMq+hDZat+wTuFpcDfE9fnfQm2ovy2XD9Ub+L/sRHYJ94Weul9g3nSn1wAtnEZAnK/PMySxGtVptdGXEfqbu9X0yvfxnGZNJY+cGMhMLvc/y2jJaFvKrXbtwZFfxtYMDk7GibaK3lvXL9qwlvnTnWb8s+iTqnud64FcjMgt8pIzM1PZuwqYzU4HniDGwZVt9Q+uCB+taLtQ3s6xu3QOcFxnAPvFs75fl/WYV+ivXxRg80ycLfIvAg7GGTFaWtcpYDW4zHh38Go4DTu8RWula2MoqHDkWtEy7tbxfnpeyDkpm2WhEkd6y/7ro0n4xvVm8Lugcx6guXvutbuM5bGT3N/G7DbZP8KLRYDOVp0aDkas16D7m37i7e1p/fe0P612wnFofDkf0PKhzcgtV1sKO6dfDvc8/yW0DrKHbWPLfj+ZjswZ9EhM8CSrpvr6y5rw0Xl+72AJttMCfahzitaYdYkt+1EFGYbyWCOjX5rN/nNwa8SqmsTYrSHzS1o4SexnXpxHrrwH5vJXY3vSW0w+itW3tW5ReP2v9n6V6A4dt8d684Xd/Xgv1b/9pdW3XR7GGKyQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk9H30X93x9NGE27eEAAAAAElFTkSuQmCC"></div>
+                    <div class="slide"><img src="https://iconape.com/wp-content/png_logo_vector/500500.png"></div>
+                    <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/ar/thumb/9/9a/%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89_57357.png/280px-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89_57357.png"></div>
+                    <div class="slide"><img src="https://alnas-hospital.com/storage/settings/February2020/QoQbputqzrVNxyGPXyp0.png"></div>
+                    <div class="slide"><img src="https://gate.ahram.org.eg/Media/News/2020/1/31/19_2020-637160840720256479-25.png"></div>
+                    <div class="slide"><img src="https://ahl-masr.ngo/wp-content/uploads/2021/02/cropped-cropped-ahl_masr_1.png"></div>
+                    <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgRZ_qLICsYQrJcynd5d4vOmUK9R3eIRieA&usqp=CAU"></div>
+                 </section>
+            </div>
+        </div>
+    </div>
+ </section>
+ <section>
+    
+    <section>
+        <div class="container mt-3">
+    
+            <div class="card" width="100%"   width="100%" >
+              <img class="card-img-top" src="https://img.freepik.com/free-photo/top-view-world-heart-day-concept-with-stethoscope_23-2148631023.jpg?t=st=1650124638~exp=1650125238~hmac=5b7d3ed18ab2784b5d6147f5bae891b3f03b2880da8a028f25a035fa764e88c9&w=1060" alt="Card image" width>
+              <div class="card-body">
+                <h4 class="card-title">Heart care</h4>
+                <p class="card-text">here you can donate for hospitals which aim to serve surgery and so on.</p>
+                <a href="cha.php" class="btn btn-primary">Donate NOW</a>
+              </div>
+            </div>
+            <div class="card" width="100%"   >
+              <img class="card-img-top" src="https://img.freepik.com/free-vector/watercolor-world-cancer-day-illustration-with-ribbons_52683-53437.jpg?t=st=1650125029~exp=1650125629~hmac=de06e1feb1d900f885461253fca9e38521258f1410b7ace4b7b9975941a666c3&w=740" alt="Card image" >
+              <div class="card-body">
+                <h4 class="card-title">Cancer care </h4>
+                <p class="card-text">donation will go to the hospitals which help people to beat cancer</p>
+                <a href="cha.php" class="btn btn-primary">Donate NOW</a>
+              </div>
+            </div>
+            <div class="card" width="100%"   >
+              <img class="card-img-top" src="https://img.freepik.com/free-photo/portrait-little-homeless-boy_169016-3722.jpg?t=st=1650125182~exp=1650125782~hmac=885d6baf8ebc7bdfaab44eddf5c6be6c721a353c1ba1680df41246aa78636118&w=1060" alt="Card image" >
+              <div class="card-body">
+                <h4 class="card-title">Orphan Care</h4>
+                <p class="card-text">find the best way to save Orphan lives</p>
+                <a href="cha.php" class="btn btn-primary">Donate NOW</a>
+              </div>
+            </div>
+            <div class="card" width="100%"   >
+              <img class="card-img-top" src="https://img.freepik.com/free-photo/begging-bridge-with-message-will-work-food_1150-22946.jpg?t=st=1650125225~exp=1650125825~hmac=3d91e78ceb1cfa1a14f70df9b0408c6da51f122f60bafd29136ba7a95377f303&w=1060" alt="Card image" >
+              <div class="card-body">
+                <h4 class="card-title">Homeless care</h4>
+                <p class="card-text">find the best way to save Homelesslives</p>
+                <a href="cha.php" class="btn btn-primary">Donate NOW</a>
+              </div>
+            </div>
+            <div class="card" width="100%"   >
+              <img class="card-img-top" src="https://img.freepik.com/free-photo/education-day-assortment-with-copy-space_23-2148721275.jpg?t=st=1650125283~exp=1650125883~hmac=9a42ae2da67d4fbac7aa212b68972a527a338d2b62c2ec211ab29c7c3a6ac698&w=1380" alt="Card image" >
+              <div class="card-body">
+                <h4 class="card-title">Education</h4>
+                <p class="card-text">find books and try to pay the education depts to the children</p>
+                <a href="cha.php" class="btn btn-primary">Donate NOW</a>
+              </div>
+            </div>
+            <div class="card" width="100%"   >
+              <img class="card-img-top" src="https://img.freepik.com/free-vector/group-firemen-fighting-with-fire-burn-house_107791-11147.jpg?w=1380" alt="Card image" >
+              <div class="card-body">
+                <h4 class="card-title">Burns hospitals</h4>
+                <p class="card-text">we are all here to help people who get burn</p>
+                <a href="cha.php" class="btn btn-primary">Donate NOW</a>
+              </div>
+            </div>
+           
+            
+        </section>
+ </section>
+</body>
+
+<script>
+    $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 4
+        }
+    }, {
+        breakpoint: 520,
+        settings: {
+            slidesToShow: 3
+        }
+    }]
+});
+</script>
+
+
+</html>
